@@ -15,7 +15,7 @@ class ConTest(BaseCase):
     signUp.click()
     
     
-    #Locate the input fields and submit button by ID
+    #Locate the input fields and submit button by ID a
     usaname_input= self.driver.find_element("input[placeholder=username]")
     
     password_input = self.driver.find_element("input[placeholder=confrim password]")
