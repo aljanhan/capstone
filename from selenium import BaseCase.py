@@ -6,7 +6,7 @@ class ConTest(BaseCase):
       self.open("https://wwdev.csproject.org/")
       
       
-      #Locate the login button by ID
+      #Locate the login button by ID 
     loginButton = self.driver.find_element("a[href=/login]")
     loginButton.click()
     
@@ -15,7 +15,7 @@ class ConTest(BaseCase):
     signUp.click()
     
     
-    #Locate the input fields and submit button by ID a
+    #Locate the input fields and submit button by ID 
     usaname_input= self.driver.find_element("input[placeholder=username]")
     
     password_input = self.driver.find_element("input[placeholder=confrim password]")
