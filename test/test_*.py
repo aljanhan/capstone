@@ -2,6 +2,7 @@ import time
 from selenium import webdriver
 from seleniumbase import BaseCase
 from selenium.webdriver.common.by import By
+import org.openqa.selenium.WebElement
 
 class ConTest(BaseCase):
 
@@ -63,15 +64,14 @@ class ConTest(BaseCase):
     password_input =self.driver.find_element("input[placeholder='password']")
     
     email_input.send_keys("aljanhan_smith@bloomfield.edu")
-    time.sleep(2)
+    time.sleep(1)
     
     password_input.send_keys("bloomfield")
-    time.sleep(2) 
+    time.sleep(1) 
     
     #click login
     
-    login_button = self.driver.find_element("a[href='/login']")
-    login_button.click()
+    login_button = self.driver.find_element(By.id("login-submit-button")).click()
+    
     time.sleep(2)
-    self.open("https://wwdev.csproject.org/")
-    time.sleep(3)
+    
